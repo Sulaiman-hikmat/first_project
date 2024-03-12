@@ -11,7 +11,7 @@
     <button class="btn btn-success  animate__animated animate__bounce animate__delay-2s mb-3">View now</button>
 </div>
 <div class="col-lg-5">
-  <img src="{{ asset('images/fair.jpg') }}" height="500" >
+  <img src="{{ asset('images/jeedah 1.jpg') }}" height="500" >
   {{-- <div class="animate__animated animate__bounce animate__delay-2s">Example</div> --}}
 </div>
     </div>

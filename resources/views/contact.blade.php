@@ -1,10 +1,12 @@
 @include('partial.header')
 
 <section>
+  <div class="container">
 <h2 class="text-center mt-5 text-success ">Contact Us</h2>
-<h4 class="text-center">Ready to talk to us about your product. Contact us for consultation and  more</h4>
+<h4 class="text-center">Your Sure Plug for Flawless skin <span class="text reset">jee
+
 {{-- form --}}
-<form>
+{{-- <form>
     <div class="row mt-5">
       <div class="col">
         <input type="text" class="form-control" placeholder="Name">
@@ -26,10 +28,10 @@
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
     
-  </form>
+  </form> --}}
 {{-- form --}}
 </section>
-
+</div>
 
 
 

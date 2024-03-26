@@ -30,9 +30,9 @@
             <a class="nav-link me-3" href="#">Contact</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link me-3" href="#">Services</a>
+            <a class="nav-link me-3" href="#">Products</a>
           </li>
-          <li class="nav-item dropdown">
+          <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Skincare Sets
             </a>
@@ -42,7 +42,7 @@
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Something else here</a>
             </div>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link" href="#">Shop Now</a>
           </li>

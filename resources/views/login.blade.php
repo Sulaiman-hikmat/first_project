@@ -25,7 +25,7 @@
   <input type="submit" value="Login" class="btn" name="submit" required>  
 </div>
 <div class="links">
-    Don't have account? <a href="register.html">Sign Up Now</a>
+    Don't have account? <a href="{{ route('signup.form') }}">Sign Up Now</a>
 </div>
 </form>
         </div>

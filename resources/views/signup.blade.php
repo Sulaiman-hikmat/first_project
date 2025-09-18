@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="all">
         <div class="box form-box">
 
             <header>Sign Up</header>
@@ -31,10 +31,10 @@
                     <input type="password" name="password" id="password" autocomplete="off" required>
                 </div>
                 <div class="field">
-                    <input type="submit" value="Login" class="btn" name="submit" required>
+                    <input type="submit" value="Register" class="button " name="submit" required>
                 </div>
                 <div class="links">
-                    Already have an account? <a href="{{ route('signup') }}">Sign in</a>
+                    Already have an account? <a href="{{ route('login') }}">Sign in</a>
                 </div>
             </form>
         </div>

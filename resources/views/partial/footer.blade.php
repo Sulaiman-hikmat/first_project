@@ -79,7 +79,7 @@
             <a href="#!" class="text-reset text-dark">Orders</a>
           </p>
           <p>
-            <a href="#!" class="text-reset text-dark">Services</a>
+            <a href="#!" class="text-reset text-dark\">Services</a>
           </p>
         </div>
         <!-- Grid column -->

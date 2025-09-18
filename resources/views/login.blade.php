@@ -9,10 +9,10 @@
     <title>Login</title>
 </head>
 <body>
-    <div class="container">
+    <div class="all">
         <div class="box form-box">
             <header>Login</header>
-            <form action="" method="post">
+            <form action="{{route('login')}}" method="post">
             <div class="field input">
                 <label for="Username">Username</label>
                 <input type="text" name="Username" id="username" required>
@@ -22,10 +22,10 @@
                 <input type="password" name="password" id="password" required>
     </div>
 <div class="field">
-  <input type="submit" value="Login" class="btn" name="submit" required>  
+  <input type="submit" value="Login" class="button" name="submit" required>  
 </div>
 <div class="links">
-    Don't have account? <a href="{{ route('signup.form') }}">Sign Up Now</a>
+    Don't have account? <a href="{{ route('signup') }}">Sign Up Now</a>
 </div>
 </form>
         </div>

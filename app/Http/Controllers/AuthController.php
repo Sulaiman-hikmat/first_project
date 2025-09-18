@@ -19,6 +19,16 @@ class AuthController extends Controller
         'password' =>$request->password,
     ]);
 
-    return $user;
+    return redirect()->route('login');
+ }
+ public function get(){
+    return view('login');
+ }
+ public function login(Request $request){
+    $user = User::find([
+        'email' => $request->email,
+        'password' =>$request->password,
+    ]);
+    return redirect()->route('index');
  }
 }

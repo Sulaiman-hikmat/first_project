@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,27 +16,19 @@ use App\Http\Controllers\PostController;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-Route::get('/contact',function(){
-    return view('contact');
+Route::get('/', [HomeController::class, 'show'])->name('index');
+Route::get('/contact', [HomeController::class, 'show_contact'])->name('contact');
+Route::get('/about', [HomeController::class, 'show_about'])->name('about');
+Route::get('/product', [HomeController::class, 'show_product'])->name('product');
 
-});
-Route::get('/about',function(){
-    return view('about');
 
-});
-Route::get('/product',function(){
-    return view('product');
-
-});
-Route::get('/login', function () {
-    return view('login');
+Route::get('/login',function(){
+       return view('login');
 });
 
 Route::get('/signup', [AuthController::class, 'show'])->name('signup.form');
 Route::post('/signup', [AuthController::class, 'register'])->name('signup');
-
-Route::get('/post', [PostController::class, 'showpost'])->name('post.form');
+Route::get('/login', [AuthController::class, 'get'])->name('login.form');
+Route::post('/login', [AuthController::class, 'login'])->name('login');
 Route::post('/post', [PostController::class, 'createpost'])->name('create.post');
+Route::get('/post', [PostController::class, 'showpost'])->name('post.form');

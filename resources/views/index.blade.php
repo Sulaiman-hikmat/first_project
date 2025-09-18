@@ -1,155 +1,289 @@
 @include('partial.header')
 
-{{-- section --}}
-<div class="container">
-    <section style="margin-top: 80px">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h1 style="font-size:50px" class="mt-4">Your Plug For Flawless <br> <span
-                            class="text-success">Skin</span></h1>
-                    <p class="ms-4">we're here to empower you with the tools and knowledge you need to achieve your
-                        skincare goals.
-                        Join us on the path to glowing, radiant skin your journey starts now.</p>
-                    <button class="btn btn-success  animate__animated animate__bounce animate__delay-2s mb-3">View
-                        now</button>
-                    <a href="#"
-                        class="btn btn-success animate__animated animate__bounce animate__delay-2s mb-3">Link</a>
-                </div>
-                <div class="col-lg-5">
-                    <img src="{{ asset('images/fair.jpg') }}" height="500">
-                </div>
-            </div>
+{{-- Hero Section --}}
+<section class="container py-5 mt-5">
+    <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+            <h1 class="display-4 fw-bold lh-sm">
+                Your Plug For Flawless <br>
+                <span class="text-success">Skin</span>
+            </h1>
+            <p class="lead mt-3 text-muted">
+                We're here to empower you with the tools and knowledge you need to achieve your
+                skincare goals. Join us on the path to glowing, radiant skin – your journey starts now.
+            </p>
+            <a href="{{ route('signup') }}" 
+               class="btn btn-success btn-lg mt-3 shadow-sm px-4 py-2 rounded-pill">
+                Get Started
+            </a>
         </div>
-    </section>
-    {{-- why --}}
+        <div class="col-md-6 text-center">
+            <img src="{{ asset('images/fair.jpg') }}" 
+                 class="img-fluid rounded shadow-lg hover-zoom" 
+                 alt="Skincare">
+        </div>
+    </div>
+    <hr class="border-success mt-5">
+</section>
 
+{{-- Signature Section --}}
+<section class="container py-5">
+    <h2 class="text-center mb-5 fw-semibold">Rejuvenate your complexion with our signature</h2>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card border-0 shadow-sm text-center h-100 p-4 hover-shadow rounded-3">
+                <img src="{{ asset('images/Feature-1.jpg') }}" 
+                     class="rounded-circle mx-auto mb-3 border border-3 border-success"
+                     style="width: 130px; height: 130px; object-fit: cover;" alt="">
+                <h4 class="fw-bold mb-3">Skin Analysis</h4>
+                <p class="text-muted">There is no one-size-fits-all skincare regimen. Many factors play a role in proper care.</p>
+                <a href="#" class="btn btn-outline-success mt-3 rounded-pill">Read More</a>
+            </div>
+        </div>
 
-    <section class="mt-5">
-        <div class="row">
-            <div class="col mb-5">
+        <div class="col-md-4">
+            <div class="card border-0 shadow-sm text-center h-100 p-4 hover-shadow rounded-3">
+                <img src="{{ asset('images/pedicure.jpeg') }}" 
+                     class="rounded-circle mx-auto mb-3 border border-3 border-success"
+                     style="width: 130px; height: 130px; object-fit: cover;" alt="">
+                <h4 class="fw-bold mb-3">Spa Treatments</h4>
+                <p class="text-muted">Pamper yourself from head to toe. Indulge in relaxing treatments for a luxurious experience.</p>
+                <a href="#" class="btn btn-outline-success mt-3 rounded-pill">Read More</a>
+            </div>
+        </div>
 
-                <img src="{{ asset('images/cream 1.jpg') }}" alt="">
-            </div>
-            <div class="col">
-                <h2 class="text-center text-success">Why Choose Us</h2>
-                <p> Our skincare formulations are crafted using carefully selected natural ingredients
-                    known for their efficacy and safety. We believe in harnessing the power of nature to
-                    deliver real results, without compromising on quality or integrity.</p>
-                <p>
-                    our skincare products are formulated using cutting-edge scientific techniques and technologies.
-                    Each product undergoes rigorous testing to ensure maximum effectiveness and safety for all skin
-                    types.
-                    Whether you're dealing with acne, aging, dryness, or sensitivity, we offer a comprehensive range of
-                    skincare
-                    solutions designed to address your specific concerns. From gentle cleansers to potent serums, we
-                    have
-                    everything
-                    you need to achieve healthy, radiant skin.
-                    You can trust that what you see on our labels is what you get – no hidden ingredients or misleading
-                    claims.
-                    We're here to empower you with the knowledge you need to make informed choices about your skincare.
-                </p>
-                <p>Your satisfaction is our top priority. Our dedicated customer service team is here to assist you
-                    every
-                    step
-                    of the way, from product recommendations to skincare advice. We're committed to providing an
-                    exceptional
-                    shopping
-                    experience that exceeds your expectations.
-                </p>
-            </div>
-        </div>
-        {{-- why choose us --}}
-
-        {{-- natural --}}
-        <div>
-            <h1 class="text-center">We are Natural, cruelty free skincare </h1>
-            <p class="text-center col-11 fs-5"> At Natural, we believe that true beauty comes from nature's own bounty,
-                and we're committed to bringing you skincare products that harness the power
-                of natural ingredients. We understand the importance of caring for your skin
-                without compromising on ethics,
-                which is why all our products are cruelty-free, never tested on animals.</p>
-        </div>
-        {{-- natural --}}
-        <div class="bg-light">
-            <h1 class="text-center text-success">Some Of Our product</h1>
-            <div class="row">
-                <div class="col"><img src="{{ asset('images/body 2.jpg') }}" alt=""></div>
-                <div class="col"><img src="{{ asset('images/cre2.jpeg') }}" alt=""></div>
-                <div class="col"><img src="{{ asset('images/serum.jpeg') }}" alt=""></div>
-                <div class="col"><img src="{{ asset('images/face4.jpeg') }}" alt=""></div>
-
-            </div>
-            <div class="row mt-5">
-                <div class="col"><img src="{{ asset('images/img2.jpeg') }}" alt=""></div>
-                <div class="col"><img src="{{ asset('images/dove.jpeg') }}" alt=""></div>
-                <div class="col"><img src="{{ asset('images/ser2.jpeg') }}" alt=""></div>
-                <div class="col"><img src="{{ asset('images/img 2.jpeg') }}" alt=""></div>
-            </div>
-        </div>
-    </section>
-    {{-- why --}}
-    {{-- signature --}}
-    <h1 class="text-center">Rejuvenate your complexion with our signature</h1>
-    <div class="row">
-        <div class="col-sm-12 col-md-4 mb-3">
-            <div class="col-content d-flex flex-column justify-content-center align-items-center">
-                <img class="rounded-circle img-thumbnail border-success mb-3" src="{{ asset('images/Feature-1.jpg') }}" style="width: 150px; height: 130px;" alt="">
-                <h2 class="change-color mb-3">Skin analysis</h2>
-                <p class="mb-3">We believe that there is no universal, one size fits all skin care regimen that will leave everybody with glowing skin. There are many factors involved in determining proper skin care.</p>
-                <a href="#" class="btn btn-success">Read more</a>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-4 mb-3">
-            <div class="col-content d-flex flex-column justify-content-center align-items-center">
-                <img class="rounded-circle img-thumbnail border-success mb-3" src="{{ asset('images/pedicure.jpeg') }}" style="width: 150px; height: 130px;" alt="">
-                <h2 class="mb-3">Spa Treatments</h2>
-                <p class="mb-3">Pamper yourself from head to toe. For a truly luxurious spa experience, indulge our relaxing body treatments as the perfect complement to our rejuvenating facials.</p>
-                <a href="#" class="btn btn-success">Read more</a>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-4 mb-3">
-            <div class="col-content d-flex flex-column justify-content-center align-items-center">
-                <img class="rounded-circle img-thumbnail border-success mb-3" src="{{ asset('images/choco 1.jpg') }}" style="width: 150px; height: 130px;" alt="">
-                <h2 class="mb-3">Skin analysis</h2>
-                <p class="mb-3">We believe that there is no universal, one size fits all skin care regimen that will leave everybody with glowing skin. There are many factors involved in determining proper skin care.</p>
-                <a href="#" class="btn btn-success">Read more</a>
+        <div class="col-md-4">
+            <div class="card border-0 shadow-sm text-center h-100 p-4 hover-shadow rounded-3">
+                <img src="{{ asset('images/choco 1.jpg') }}" 
+                     class="rounded-circle mx-auto mb-3 border border-3 border-success"
+                     style="width: 130px; height: 130px; object-fit: cover;" alt="">
+                <h4 class="fw-bold mb-3">Custom Care</h4>
+                <p class="text-muted">We design skincare tailored for you. Glow with confidence using a personalized regimen.</p>
+                <a href="#" class="btn btn-outline-success mt-3 rounded-pill">Read More</a>
             </div>
         </div>
     </div>
-    
-    
-    
-    {{-- signature --}}
-</div>
-{{-- footer --}}
-@include('partial.footer')
-{{-- footer --}}
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-    var Tawk_API = Tawk_API || {},
-        Tawk_LoadStart = new Date();
-    (function() {
-        var s1 = document.createElement("script"),
-            s0 = document.getElementsByTagName("script")[0];
-        s1.async = true;
-        s1.src = 'https://embed.tawk.to/65f190968d261e1b5f6d2ea7/1horppjcg';
-        s1.charset = 'UTF-8';
-        s1.setAttribute('crossorigin', '*');
-        s0.parentNode.insertBefore(s1, s0);
-    })();
-</script>
-<!--End of Tawk.to Script-->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-</script>
-</body>
+</section>
 
-</html>
+{{-- Natural Section --}}
+<section class="bg-pattern py-5 text-center">
+   <div class="container position-relative" style="z-index: 1;">
+       <h2 class="fw-semibold mb-4">We are Natural, Cruelty-Free Skincare</h2>
+       <p class="fs-5 text-muted mx-auto" style="max-width: 800px;">
+           At Natural, we believe true beauty comes from nature's bounty...
+       </p>
+   </div>
+</section>
+
+
+{{-- Products Section --}}
+<section class="container py-5">
+    <h2 class="text-center fw-semibold mb-5">Start Your Skincare Journey</h2>
+    <div class="row g-4">
+        
+        <div class="col-md-4">
+            <a href="your_link_here" class="text-decoration-none">
+                <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden hover-card">
+                    <div class="img-container">
+                        <img src="{{ asset('images/jeedah 1.jpg') }}" 
+                             class="card-img-top" alt="Body Cream">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold text-dark">Body Cream</h5>
+                        <small class="text-muted fw-semibold">Nourish & Glow</small>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-4">
+            <a href="your_link_here" class="text-decoration-none">
+                <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden hover-card">
+                    <div class="img-container">
+                        <img src="{{ asset('images/scrub.jpg') }}" 
+                             class="card-img-top" alt="Body Scrub">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold text-dark">Body Scrub</h5>
+                        <small class="text-muted fw-semibold">Exfoliate & Renew</small>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-4">
+            <a href="your_link_here" class="text-decoration-none">
+                <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden hover-card">
+                    <div class="img-container">
+                        <img src="{{ asset('images/face.jpg') }}" 
+                             class="card-img-top" alt="Face Cream">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold text-dark">Face Cream</h5>
+                        <small class="text-muted fw-semibold">Hydrate & Protect</small>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+{{-- Why Choose Us Section --}}
+<section class="container py-5">
+    <h2 class="text-center fw-semibold mb-5">Why Choose Us?</h2>
+    <div class="row g-4 text-center">
+        <div class="col-md-3">
+            <div class="p-4 border rounded-3 shadow-sm hover-shadow h-100">
+                <i class="bi bi-leaf text-success display-5 mb-3"></i>
+                <h5 class="fw-bold">Natural Ingredients</h5>
+                <p class="text-muted">We use only natural and safe ingredients for your skin.</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="p-4 border rounded-3 shadow-sm hover-shadow h-100">
+                <i class="bi bi-heart text-danger display-5 mb-3"></i>
+                <h5 class="fw-bold">Cruelty-Free</h5>
+                <p class="text-muted">Our products are never tested on animals – 100% ethical.</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="p-4 border rounded-3 shadow-sm hover-shadow h-100">
+                <i class="bi bi-star text-warning display-5 mb-3"></i>
+                <h5 class="fw-bold">Trusted Quality</h5>
+                <p class="text-muted">Dermatologist-tested, safe, and trusted by thousands.</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="p-4 border rounded-3 shadow-sm hover-shadow h-100">
+                <i class="bi bi-truck text-primary display-5 mb-3"></i>
+                <h5 class="fw-bold">Fast Delivery</h5>
+                <p class="text-muted">Quick and reliable delivery right to your doorstep.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{-- Testimonials Section --}}
+<section class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center fw-semibold mb-5">What Our Customers Say</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm p-4 h-100">
+                    <p class="text-muted">"These products changed my skincare routine completely! My skin is glowing."</p>
+                    <div class="d-flex align-items-center mt-3">
+                        <img src="{{ asset('images/testimonial1.jpg') }}" class="rounded-circle me-3" width="50" height="50" alt="">
+                        <div>
+                            <h6 class="fw-bold mb-0">Amina Bello</h6>
+                            <small class="text-muted">Lagos, Nigeria</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm p-4 h-100">
+                    <p class="text-muted">"The spa treatment was so relaxing, I felt like a new person afterwards."</p>
+                    <div class="d-flex align-items-center mt-3">
+                        <img src="{{ asset('images/testimonial2.jpg') }}" class="rounded-circle me-3" width="50" height="50" alt="">
+                        <div>
+                            <h6 class="fw-bold mb-0">Chinedu Okafor</h6>
+                            <small class="text-muted">Abuja, Nigeria</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm p-4 h-100">
+                    <p class="text-muted">"Finally found cruelty-free skincare that actually works. Highly recommend!"</p>
+                    <div class="d-flex align-items-center mt-3">
+                        <img src="{{ asset('images/testimonial3.jpg') }}" class="rounded-circle me-3" width="50" height="50" alt="">
+                        <div>
+                            <h6 class="fw-bold mb-0">Grace Adeyemi</h6>
+                            <small class="text-muted">Ibadan, Nigeria</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{-- Call to Action Section --}}
+<section class="bg-dots py-5 text-center">
+   <div class="container">
+       <h2 class="fw-semibold mb-4">Glow Naturally, Shine Beautifully</h2>
+       <p class="lead mb-4">Take the first step towards healthier skin today.</p>
+       <a href="{{ route('signup') }}" class="btn btn-light btn-lg px-5 rounded-pill shadow-sm">Get Started</a>
+   </div>
+</section>
+
+
+{{-- Newsletter Section --}}
+<section class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+            <h2 class="fw-semibold mb-3">Stay Updated</h2>
+            <p class="text-muted mb-4">Subscribe to our newsletter and never miss skincare tips and exclusive offers.</p>
+            <form class="d-flex flex-column flex-sm-row justify-content-center">
+                <input type="email" class="form-control me-sm-2 mb-2 mb-sm-0 rounded-pill" placeholder="Enter your email">
+                <button class="btn btn-success px-4 rounded-pill">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+@include('partial.footer')
+
+{{-- Custom hover effects --}}
+<style>
+    .hover-zoom:hover {
+        transform: scale(1.03);
+        transition: transform 0.3s ease-in-out;
+    }
+    .hover-shadow:hover {
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
+        transform: translateY(-5px);
+        transition: all 0.3s ease-in-out;
+        }
+        /* Wavy Background */
+    section.bg-pattern{
+    background: linear-gradient(135deg, #f8f9fa 25%, #e9f7ef 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+section.bg-pattern::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: url("https://www.toptal.com/designers/subtlepatterns/patterns/wavecut.png");
+    opacity: 0.08;
+    z-index: 0;
+}
+
+    
+    .img-container {
+        height: 280px;
+        overflow: hidden;
+    }
+    .img-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+    }
+    .hover-card:hover img {
+        transform: scale(1.05);
+    }
+    .hover-card {
+        transition: all 0.3s ease-in-out;
+    }
+    .hover-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
+    }
+</style>

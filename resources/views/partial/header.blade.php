@@ -19,18 +19,18 @@
       </button>
     
       <div class="collapse navbar-collapse " id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav mr-auto" >
           <li class="nav-item active ms-2 ">
-            <a class="nav-link " href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link " href="{{route('index')}}">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link me-3" href="#">About</a>
+            <a class="nav-link me-3" href="{{route('about')}}">About</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link me-3" href="#">Contact</a>
+            <a class="nav-link me-3" href="{{route('contact')}}">Contact</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link me-3" href="#">Products</a>
+            <a class="nav-link me-3" href="{{route('product')}}">Products</a>
           </li>
           <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -46,11 +46,15 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Shop Now</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-success text-white " href="{{ route('login.form') }}" >Login</a>
+          </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
+        
       </div>
     </nav>
   <!-- <nav> -->

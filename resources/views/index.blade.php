@@ -57,7 +57,7 @@
                 <img src="{{ asset('images/choco 1.jpg') }}" 
                      class="rounded-circle mx-auto mb-3 border border-3 border-success"
                      style="width: 130px; height: 130px; object-fit: cover;" alt="">
-                <h4 class="fw-bold mb-3">Custom Care</h4>
+                <h4 class="fw-bold mb-3">Custom care</h4>
                 <p class="text-muted">We design skincare tailored for you. Glow with confidence using a personalized regimen.</p>
                 <a href="#" class="btn btn-outline-success mt-3 rounded-pill">Read More</a>
             </div>
